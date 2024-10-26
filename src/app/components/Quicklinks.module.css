@@ -1,53 +1,106 @@
-/* src/app/components/QuickLinks.module.css */
-
 .quickLinksContainer {
-  background-color: #eaf0ff;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #d4e1ff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  margin-bottom: 20px;
+    background-color: #eaf0ff; /* Light blue background for container */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #d4e1ff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .linksContainer {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Modal overlay styling */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure overlay is on top */
+}
+
+/* Modal card styling */
+.modalCard {
+    background-color: #ffebcc; /* Light yellow for emphasis */
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ffcc80;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    z-index: 1001; /* Ensure modal content is on top of the overlay */
+}
+
+/* Link card base styles */
 .linkCard {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none; /* Remove underline from links */
-  color: inherit; /* Inherit text color from parent */
-  padding: 15px;
-  border-radius: 8px;
-  background-color: #f9f9fb; /* Example background color */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-  cursor: pointer; /* Ensure the cursor changes */
+    display: flex;
+    flex-direction: column;
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text for contrast */
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+    cursor: pointer; /* Cursor change on hover */
+    margin-bottom: 15px; /* Space between cards */
 }
 
+/* Specific background colors for each link */
+.canvasLms {
+    background-color: #4a90e2; /* Light blue for Canvas LMS */
+}
+
+.joinClass {
+    background-color: #ec67d3; /* Pink for Join Live Class */
+}
+
+.contactTeacher {
+    background-color: #5959ff; /* Indigo for Contact Teacher */
+}
+
+/* Hover effect with slight color change */
 .linkCard:hover {
-  transform: scale(1.05);
-  background-color: #e0e0e0;
+    transform: scale(1.05);
+    filter: brightness(1.1); /* Slightly brighten background on hover */
 }
 
 .icon {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .icon img {
-  width: 30px; /* Smaller icon size */
-  height: 30px;
+    width: 30px;
+    height: 30px;
 }
 
 .h3 {
-  font-size: 16px; /* Smaller heading font */
-  font-weight: bold;
-  margin: 8px 0;
-  cursor: pointer; /* Change cursor to pointer for the h3 */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
 }
 
 .p {
-  font-size: 12px; /* Smaller paragraph font */
-  color: #666;
+    font-size: 12px;
+    color: #dcdcdc; /* Light gray text for paragraphs */
+}
+
+.okButton {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.okButton:hover {
+    background-color: #0056b3;
 }
