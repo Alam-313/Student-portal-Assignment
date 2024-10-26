@@ -1,0 +1,21 @@
+/* src/app/page.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.sectionsWrapper {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.section {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .sectionsWrapper {
+    flex-direction: column; /* Stack sections vertically */
+  }
+}
