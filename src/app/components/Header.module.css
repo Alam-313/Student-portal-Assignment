@@ -1,0 +1,42 @@
+/* src/app/components/Header.module.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a6fff;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .greeting {
+    text-align: right;
+  }
+  
+  .greeting p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .greeting span {
+    font-size: 14px;
+    color: #dedede;
+  }
+  

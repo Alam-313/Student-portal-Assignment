@@ -1,0 +1,32 @@
+/* src/app/components/Announcements.module.css */
+
+.announcementsContainer {
+  background-color: #f2f2f2; /* Slightly darker white */
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0; /* Slightly darker than background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  margin-bottom: 20px;
+}
+
+.announcementSection {
+  background-color: #f9f9fb; /* Background for each section */
+  padding: 1px; /* Padding for the section */
+  border-radius: 8px; /* Slightly rounded corners */
+  margin-bottom: 10px; /* Gap between sections */
+}
+
+.announcementItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Gap between announcement items */
+}
+
+.icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.h3 {
+  margin-bottom: 10px;
+}

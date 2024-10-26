@@ -1,0 +1,62 @@
+/* src/app/components/ClassSchedule.module.css */
+
+.classScheduleContainer {
+  background-color: #fff4f8; /* Light pink background */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ffdee8; /* Slightly darker pink border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  margin-bottom: 20px;
+}
+
+.classSchedule {
+  background-color: #f9f9fb;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.h3 {
+  margin-bottom: 10px;
+}
+
+.classItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px; /* Small gap between items */
+  background-color: #f8f8f8; /* Mild background color for each subject */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.classItem:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+.classItem p {
+  margin: 0;
+}
+
+.current {
+  background-color: #f3e4ff; /* Highlight current class */
+}
+
+.classDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.classTime {
+  color: #5a5a5a;
+}
+
+/* Text color styles */
+.blueText {
+  color: blue; /* Blue text for even-indexed subjects */
+}
+
+.purpleText {
+  color: purple; /* Purple text for odd-indexed subjects */
+}
