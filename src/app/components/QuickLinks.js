@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from 'react';
-import styles from './QuickLinks.module.css';
+import styles from './Quicklinks.module.css';
 
 export default function QuickLinks() {
   const [showNoClassModal, setShowNoClassModal] = useState(false);
